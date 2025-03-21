@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --font-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+} 
+@font-face{
+    font-family: "idroid";
+    src:url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    font-family: var(--fonte-destaque);
+    background-image: linear-gradient(to bottom,
+    var(--cor3), var(--cor5));
+    background-attachment: fixed;
+    padding: 20px;
+    margin:  -10px;
+    min-height: 150px;
+    color: white;
+}
+
+body{
+    background-color: rgb(231, 230, 194);
+}
+
+#primeiro{
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    margin: 5px;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.637);
+}
+
+.inicio{
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.637);
+}
+
+nav > a{
+    font-family: var(--fonte-destaque);
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bolder;
+    padding: 20px;
+    transition-duration: 0.5s;
+}
+
+a:hover{
+    background-color: rgb(2, 58, 2);
+    color:  rgb(231, 230, 194);
+    text-decoration: underline;
+    border-radius: 2px;
+}
+
+main{
+    background-color: white;
+    height: auto;
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+
+}
+
+img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    
+}
+
+main p{
+    text-align: justify;
+    text-indent: 30px;
+    margin: 15px 0px;
+    line-height: 2em;
+}
+
+div.video{
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video >iframe{
+    position: absolute;
+    top: 5%;/*distância da aresta de cima do video ate o main branco*/
+    left: 5%;/*distância da aresta da esquerda do video ate o main branco*/
+    width: 90%;
+    height: 90%;
+}
+
+h1{
+    font-family: 'idroid';
+    font-weight: normal;
+    font-size: 1.4em;
+    color: rgb(9, 87, 44);
+}
+
+h2{
+    font-family: 'idroid';
+    color: rgb(18, 95, 53);
+    font-weight: normal;
+    font-size: 1.8em;
+    text-indent: 5px;
+}
+
+
+strong{
+    color: rgb(8, 71, 36);
+    font-weight: bold;
+    padding: 2px 5px;
+ }
+
+.degrade{
+    background-image: linear-gradient(to right, var(--cor2), rgb(255, 255, 255));
+}
+
+h3{
+    background-color: rgb(72, 180, 126);
+    height: 30px;
+    color: white;
+    text-indent: 5px;
+    border-radius: 15px 15px 0px 0px;
+    margin: -10px -10px 0px -10px;
+
+}
+
+aside{
+    margin: 15px 20px 20px 15px;
+    background-color: rgba(121, 201, 161, 0.521);
+    text-align: justify;
+    text-indent: 5px;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.658);
+}
+
+footer>p{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    background-color: rgba(14, 78, 14, 0.747);
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+    padding: 2px;
+}
+
+.externo{
+    color: rgb(8, 71, 36);
+    font-weight: bold;
+    background-color: rgba(100, 216, 100, 0.575);
+    text-decoration: none;
+    padding: 2px 5px;
+
+}
+
+.externo:after{
+    content: '\00A0\1F517';
+}
+
+.externo:hover{
+    background-color: black;
+    color: white;
+}
+
+ul{
+    list-style-type: "\1F5F8\00A0";/*NÃO COMPATÍVEL COM TODO NAVEGADOR*/
+    margin: 5px;
+    columns: 2;
+}
